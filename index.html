@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vitivinicultura no Paraná</title>
 
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<nav>
+<a href="#historia">História</a>
+<a href="#producao">Produção</a>
+<a href="#sustentavel">Sustentável</a>
+<a href="#simulador">Lucro</a>
+<a href="#quiz">Quiz</a>
+</nav>
+
+<header>
+<h1>🍇 Vitivinicultura Brasileira</h1>
+<p>História e Produção Sustentável de Uvas no Paraná</p>
+</header>
+
+<section class="reveal" id="historia">
+<h2>📜 História</h2>
+<p>
+As primeiras videiras chegaram ao Brasil com os portugueses.
+A imigração italiana impulsionou a produção de uvas e vinhos,
+especialmente na região Sul.
+</p>
+</section>
+
+<section class="reveal" id="producao">
+<h2>🍷 Produção no Paraná</h2>
+
+<div class="cards">
+
+<div class="card">
+<i class="fa-solid fa-grapes"></i>
+<h3>Variedades</h3>
+<p>Niagara, Bordô, Isabel e Merlot.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-sun"></i>
+<h3>Clima</h3>
+<p>Altitude e boa luminosidade.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-barrel"></i>
+<h3>Mercado</h3>
+<p>Vinhos, sucos e consumo in natura.</p>
+</div>
+
+</div>
+</section>
+
+<section class="reveal" id="sustentavel">
+
+<h2>🌱 Sustentabilidade</h2>
+
+<ul>
+<li>✔ Irrigação por gotejamento</li>
+<li>✔ Cobertura vegetal</li>
+<li>✔ Controle biológico</li>
+<li>✔ Redução de desperdícios</li>
+</ul>
+
+</section>
+
+<section class="reveal" id="simulador">
+
+<h2>💰 Simulador</h2>
+
+<input type="number" id="ha" placeholder="Hectares">
+
+<input type="number" id="kg"
+placeholder="Kg por hectare">
+
+<input type="number" id="preco"
+placeholder="Preço por Kg">
+
+<button onclick="calcular()">
+Calcular Receita
+</button>
+
+<h3 id="resultado"></h3>
+
+</section>
+
+<section class="reveal" id="quiz">
+
+<h2>🎮 Quiz</h2>
+
+<p>Qual sistema economiza mais água?</p>
+
+<button onclick="quiz(true)">
+Gotejamento
+</button>
+
+<button onclick="quiz(false)">
+Aspersão
+</button>
+
+<h3 id="quizResultado"></h3>
+
+</section>
+
+<footer>
+🍇 Vitivinicultura Brasileira
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
